@@ -1,3 +1,10 @@
-This Lab vizualizes African Countries, and Global Capital Cities.
+African Energy Transition Readiness Web Map
+Overview
 
-This concept is healping to develop some initail thinking towards the CATF Sandbox Project.
+This lab response is an interactive web map that visualizes energy transition readiness indicators for countries across Africa. The application allows users to explore how different countries perform across multiple metrics related to energy systems and hydrogen readiness.
+
+The map has the following features:
+- A layer of African data with four visualization options
+- A Clickabe Pop-Up to learn about each country and their metrics
+- Clickable Buttons which change the visualization of the country layer
+- A Legend that filters countries based on whether they are within the bin range of the legend
