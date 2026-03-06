@@ -1,0 +1,86 @@
+/* Map container */
+.map-container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+}
+
+/* Floating panel: instructions + buttons */
+.control-panel{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:white;
+    padding:12px;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    max-width:320px;
+}
+
+/* Instructions text */
+.control-instructions{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+/* Metric buttons */
+.metric-controls button{
+    display:block;
+    width:100%;
+    margin-bottom:6px;
+    padding:6px;
+    border:none;
+    background:#e0e0e0;
+    color:black;
+    border-radius:4px;
+}
+.metric-controls button.active{
+    background-color:#2b7bff;
+    color:white;
+}
+
+/* Legend: separate floating panel at bottom-left */
+.legend{
+    position:absolute;
+    bottom:20px;
+    left:15px;
+    background:white;
+    padding:10px;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    max-width:160px;
+}
+
+/* Legend title */
+.legend-title{
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+/* Legend items */
+.legend-item{
+    display:flex;
+    align-items:center;
+    margin:3px 0;
+    cursor:pointer;
+}
+
+/* Colored boxes for Legend metric bins */
+.legend-color{
+    width:18px;
+    height:18px;
+    margin-right:8px;
+}
+
+/* Metric bin colors */
+.c1{background:#d73027;}
+.c2{background:#fc8d59;}
+.c3{background:#fee08b;}
+.c4{background:#91cf60;}
+.c5{background:#1a9850;}
+
+/* Highlight active legend selection */
+.legend-item.active{
+    outline:2px solid black;
+}

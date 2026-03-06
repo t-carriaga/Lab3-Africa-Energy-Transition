@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>African Countries Energy Transition Map</title>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Map container -->
+<div id="my-map" class="map-container"></div>
+
+
+<!-- Control Panel that sits above the map -->
+<div class="control-panel">
+
+    <!-- Instructions -->
+    <div class="control-instructions">
+        <h2>How to Use This Map</h2>
+        Select a metric to visualize energy transition readiness across African countries.<br>
+        Click a country to view detailed values for all four indicators.<br>
+        Use the legend to filter and highlight countries within a specific metric range.
+    </div>
+
+    <!-- Change metric visualized buttons -->
+    <div class="metric-controls">
+        <button class="active" data-metric="System_Performance">System Performance</button>
+        <button data-metric="Transition_Readiness">Transition Readiness</button>
+        <button data-metric="Technology_Specific_Preparedness___Hydrogen">Hydrogen Technology Preparedness</button>
+        <button data-metric="Composite_Index__Hydrogen_">Hydrogen Composite Index</button>
+    </div>
+
+</div>
+
+<!-- Legend: separate panel at bottom-left -->
+<div class="legend">
+    <div class="legend-title">Score Range</div>
+
+    <div class="legend-item" data-range="0-20">
+        <span class="legend-color c1"></span> 0 – 20
+    </div>
+
+    <div class="legend-item" data-range="21-40">
+        <span class="legend-color c2"></span> 21 – 40
+    </div>
+
+    <div class="legend-item" data-range="41-60">
+        <span class="legend-color c3"></span> 41 – 60
+    </div>
+
+    <div class="legend-item" data-range="61-80">
+        <span class="legend-color c4"></span> 61 – 80
+    </div>
+
+    <div class="legend-item" data-range="81-100">
+        <span class="legend-color c5"></span> 81 – 100
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
